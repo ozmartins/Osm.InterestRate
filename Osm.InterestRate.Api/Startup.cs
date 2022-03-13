@@ -20,7 +20,9 @@ namespace Osm.InterestRate.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDependencyInjection();
+			
             services.AddControllers();
+			
             services.AddCustomSwagger();
         }
         
