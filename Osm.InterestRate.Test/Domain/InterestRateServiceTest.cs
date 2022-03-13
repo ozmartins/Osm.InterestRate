@@ -11,7 +11,7 @@ namespace Osm.InterestRate.Test.Domain
     public class InterestRateServiceTest
     {
         [TestMethod]
-        public void GettingValidInteresRateFromService()
+        public void InterestRateServiceTest_GettingValidInteresRate()
         {
             #region arrange
             var expectedInterestRate = new InterestRateModel() { Value = Constants.DefaultInterestRate };

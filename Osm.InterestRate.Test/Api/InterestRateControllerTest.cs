@@ -10,10 +10,10 @@ using System;
 namespace Osm.InterestRate.Test.Api
 {
     [TestClass]
-    public class TestInterestRateController
+    public class InterestRateControllerTest
     {
         [TestMethod]
-        public void GettingValidInteresRateFromController()
+        public void InterestRateControllerTest_GettingValidInteresRate()
         {
             #region arrange
             var expectedInterestRate = new InterestRateModel() { Value = Constants.DefaultInterestRate };
@@ -40,7 +40,7 @@ namespace Osm.InterestRate.Test.Api
         }
 
         [TestMethod]
-        public void GettingNullInteresRateFromController()
+        public void InterestRateControllerTest_GettingNullInteresRate()
         {
             #region arrange           
             var expectedErrorMessage = "Something went wrong. The system couldn't find the interest rate. Please, contact tech support or try again later.";
@@ -67,7 +67,7 @@ namespace Osm.InterestRate.Test.Api
         }
 
         [TestMethod]
-        public void ExceptionWhenGettingInteresRateFromController()
+        public void InterestRateControllerTest_ExceptionWhenGettingInteresRate()
         {
             #region arrange           
             var expectedErrorMessage = "Error message thown during unit test.";

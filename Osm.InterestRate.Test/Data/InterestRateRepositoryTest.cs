@@ -9,7 +9,7 @@ namespace Osm.InterestRate.Test.Data
     public class InterestRateRepositoryTest
     {
         [TestMethod]
-        public void RecoveringValidInterestRateFromRepository()
+        public void InterestRateRepositoryTest_RecoveringValidInterestRate()
         {
             #region arange
             var expectedInterestRate = new InterestRateModel() { Value = Constants.DefaultInterestRate };           
