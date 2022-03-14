@@ -2,11 +2,13 @@
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Osm.InterestRate.Api.Extensions
 {
+    [ExcludeFromCodeCoverage]
     public static class SwaggerExtension
-    {
+    {       
         public static IServiceCollection AddCustomSwagger(this IServiceCollection services)
         {
             services.AddSwaggerGen(c =>
