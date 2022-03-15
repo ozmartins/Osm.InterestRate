@@ -17,6 +17,10 @@ This project is using some libraries and frameworks:
  - [MSTest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting?view=visualstudiosdk-2022)
  - [Swagger](https://swagger.io/)
 
+## Production
+
+To see the app running in a production environment, access https://osm-interest-rate.herokuapp.com/
+
 ## Running locally
 
 First, clone the project to your local machine using the following command:
