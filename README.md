@@ -46,12 +46,13 @@ Now, the is running and you can try it accessing the URL https://localhost:5001
 
 ### Key files
 
-Key files to edit:
+The table below shows the main files in the project
 
-  - "app/api/endpoints/*" - Adding endpoints and APIs
-  - "db/migrate" - Defining the model attributes in the database
-  - "app/models" - Defining any additional model information
-  - "test/api"   - Defining tests for your APIs (if needed)
+|File|Namespace|Comment|
+| ------ | ------ | ----- |
+|InterestRateModel|Osm.InterestRate.Domain.Models|A model class that stores the interest rate value|
+|InterestRateService|Osm.InterestRate.Domain.Services|A service which uses a repositry to retrieve an intereste rate model|
+|InterestRateRepository|Osm.InterestRate.Data.Repositories|Currently this repository return a fixed interest rate, but it can be changed any time to get data from a database or from an enviroment variables|
 
 ### Endpoints
 
