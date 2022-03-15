@@ -25,7 +25,7 @@ namespace Osm.InterestRate.Api.Extensions
                     Contact = new OpenApiContact
                     {
                         Name = "Oséias da Silva Martins",
-                        Url = new Uri("https://github.com/ozmartins"),
+                        Url = new Uri("https://github.com/ozmartins/Osm.InterestRate"),
                         Email = "oseias.silva.martins@gmail.com"
                     },
                     License = new OpenApiLicense
