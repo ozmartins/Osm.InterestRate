@@ -17,11 +17,9 @@ The Domain layer contains a model for interest rate and a service which consumes
 
 This project is using several libraries and frameworks:
 
- - [Rails 3.2](http://rubyonrails.org/) - Web Framework
- - [Grape](http://rdoc.info/github/intridea/grape) - API endpoints
- - [Devise](https://github.com/plataformatec/devise) - Authentication
- - [RailsAdmin](https://github.com/sferik/rails_admin) - Database dashboard
- - [MiniTest](https://github.com/seattlerb/minitest) - Unit testing
+ - [.NET 5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
+ - [Docker](https://docs.docker.com/)
+ - [MSTest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting?view=visualstudiosdk-2022)
 
 ## Installation
 
