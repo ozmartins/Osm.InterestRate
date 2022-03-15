@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Osm.InterestRate.Domain.Interfaces;
+using Osm.InterestRate.Domain.Models;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
+using System.ComponentModel;
 
 namespace Osm.InterestRate.Api.Controllers
 {
@@ -18,7 +21,8 @@ namespace Osm.InterestRate.Api.Controllers
         [HttpGet]
         [ProducesResponseType(200)]
         [ProducesResponseType(500)]
-        public ActionResult Get()
+        [SwaggerOperation(Summary = ControllerConstants.InterestRateGetSummary, Description = ControllerConstants.InterestRateGetDescription, Tags = new[] { ControllerConstants.InterestRateTag })]
+        public ActionResult<InterestRateModel> Get()
         {
             try
             {
@@ -26,7 +30,7 @@ namespace Osm.InterestRate.Api.Controllers
 
                 if (interestRate == null)
                 {
-                    return StatusCode(500, "Something went wrong. The system couldn't find the interest rate. Please, contact tech support or try again later.");
+                    return StatusCode(500, ControllerConstants.NullInterestRateMessage);
                 }
 
                 return Ok(interestRate);
