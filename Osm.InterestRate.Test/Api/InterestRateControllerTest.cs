@@ -16,7 +16,7 @@ namespace Osm.InterestRate.Test.Api
         public void InterestRateControllerTest_GettingValidInteresRate()
         {
             #region arrange
-            var expectedInterestRate = new InterestRateModel() { Value = Constants.DefaultInterestRate };
+            var expectedInterestRate = new InterestRateModel() { Value = InterestRate.Domain.Constants.DefaultInterestRate };
 
             var interestRateServiceMock = new Mock<IInterestRateService>();
             interestRateServiceMock.Setup(p => p.GetInterestRate()).Returns(expectedInterestRate);

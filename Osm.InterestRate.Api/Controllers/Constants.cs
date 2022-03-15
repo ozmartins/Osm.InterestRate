@@ -1,6 +1,6 @@
 ﻿namespace Osm.InterestRate.Api.Controllers
 {
-    public static class ControllerConstants
+    public static class Constants
     {
         public const string InterestRateTag = "Interest rate";
 
