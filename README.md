@@ -47,7 +47,7 @@ The table below shows the main files in the project
 |File|Namespace|Comment|
 | ------ | ------ | ----- |
 |InterestRateModel.cs|Osm.InterestRate.Domain.Models|A model class that stores the interest rate value|
-|InterestRateService.cs|Osm.InterestRate.Domain.Services|A service which uses a repositry to retrieve an intereste rate model|
+|InterestRateService.cs|Osm.InterestRate.Domain.Services|A service which uses a repository to retrieve an interest rate model|
 |InterestRateRepository.cs|Osm.InterestRate.Data.Repositories|Currently this repository return a fixed interest rate, but it can be changed any time to get data from a database or from an enviroment variables|
 |InterestRateController.cs|Osm.InterestRate.Api.Controllers|A controller which exposes the service to the external world. It validate the return of InterestRateService and return a Internal Server Error. Otherwise, it will return 200 status code|
 
