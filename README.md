@@ -2,10 +2,6 @@
 
 This simple API has only one endpoint that returns a fixed interest rate defined in the source code. The value returned here is used by the FutureValueApi to calculate the future value of an amount of money.
 
-The project has three layers: Data, Domain, and API. The Data layer has just one repository that returns a fixed interest rate. I am using a repository here to make it easy to start using a database instead of the fixed interest rate value (if we want to). 
-
-The Domain layer contains a model for interest rate and a service which consumes the repository. Finally, the API layer just exposes the service to the external world through a controller.
-
 ## Outline
 
  - [Libraries](#libraries)
@@ -53,6 +49,7 @@ The table below shows the main files in the project
 |InterestRateModel|Osm.InterestRate.Domain.Models|A model class that stores the interest rate value|
 |InterestRateService|Osm.InterestRate.Domain.Services|A service which uses a repositry to retrieve an intereste rate model|
 |InterestRateRepository|Osm.InterestRate.Data.Repositories|Currently this repository return a fixed interest rate, but it can be changed any time to get data from a database or from an enviroment variables|
+|InterestRateController|Osm.InterestRate.Api.Controllers|A controller which exposes the service to the external world. It validate the return of InterestRateService and return a Internal Server Error. Otherwise, it will return 200 status code|
 
 ### Endpoints
 
