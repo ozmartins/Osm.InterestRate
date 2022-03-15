@@ -36,7 +36,7 @@ Finally, run the app using the command shown below:
 dotnet run --project Osm.InterestRate.Api.csproj
 ```
 
-Now, the is running and you can try it accessing the URL https://localhost:5001
+Now, the app is running and you can try it accessing the URL https://localhost:5001
 
 ## Quick Reference
 
