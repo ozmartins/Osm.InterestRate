@@ -1,6 +1,6 @@
 # Interest Rate API
 
-This simple API has only one endpoint that returns a fixed interest rate defined in the source code. The value returned here is used by the FutureValueApi to calculate the future value of an amount of money.
+This API has only one endpoint that returns a fixed interest rate defined in the source code. The value returned here is used by the FutureValueApi to calculate the future value of an amount of money.
 
 ## Outline
 
