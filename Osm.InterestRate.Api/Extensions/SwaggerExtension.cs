@@ -19,7 +19,7 @@ namespace Osm.InterestRate.Api.Extensions
                 {
                     Version = "v1",
                     Title = "Interest rate API",
-                    Description = "This simple API has only one endpoint that returns a fixed interest rate defined in the source code. " +
+                    Description = "This API has only one endpoint that returns a fixed interest rate defined in the source code. " +
                                    "The value returned here is used by the FutureValueApi to calculate the future value of an amount of money. "+
                                    "Future versions of this API will recover the interest rate from a database.",                    
                     Contact = new OpenApiContact
