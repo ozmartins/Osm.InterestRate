@@ -58,7 +58,7 @@ The table below shows the main files in the project
 
 ### Endpoints
 
-The API has only one endpoint called "/Taxa Juros". It returns the interest rate value within a JSON.
+The API has only one endpoint called "/TaxaJuros". It returns the interest rate value within a JSON.
 
 #### Request
 
