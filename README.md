@@ -53,35 +53,23 @@ Key files to edit:
   - "app/models" - Defining any additional model information
   - "test/api"   - Defining tests for your APIs (if needed)
 
-### Key URLs
+### Endpoints
 
-Few URLs to note (once rails server is running):
+The API has only one endpoint called "/TaxaJuros". It return the interest rate value whitin a JSON.
 
-  - "/api/sessions" - Simple endpoint that returns text
-  - "/rails/routes" - See a list of common rails routes
-  - "/users/sign_in" - Login (or register) a user
-  - "/admin" - Admin panel for viewing database content
+#### Request
 
-### Request Methods
+`GET /TaxaJuros`
 
-As a rule of thumb, the request method to pick is as follows:
+    curl -X 'GET' https://localhost:5001/TaxaJuros -H 'accept: application/json'
 
-|Method|Description|Example|
-| ------ | ------ | ----- |
-|get|For returning resources from read-only endpoint|Get user tweets|
-|post|For creating new resources|Create new tweet|
-|put|For updating an existing resource|Editing a user's password|
-|delete|For deleting a resource|Trashing a tweet|
+#### Response
 
+    HTTP/1.1 200 OK
+    Date: Thu, 15 Mar 2022 12:36:30 GMT
+    Status: 200 OK
+    Content-Type: application/json; charset=utf-8
 
-### Response Status Codes
-
-Another thing to notice is API response `status` codes, as a rule of thumb:
-
-|Status|Description|Example|
-| ------ | ------ | ----- |
-|200|Success|Retrieved list of user tweets|
-|201|Created|Create new tweet|
-|400|Bad request|Invalid email for registration|
-|401|Unauthorized|No permission or not logged in|
-|500|Error|Exception happened on server|
+    {
+		"value":0.01
+	}
