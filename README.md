@@ -15,32 +15,33 @@ The Domain layer contains a model for interest rate and a service which consumes
 
 ## Libraries
 
-This project is using several libraries and frameworks:
+This project is using some libraries and frameworks:
 
  - [.NET 5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
  - [Docker](https://docs.docker.com/)
  - [MSTest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting?view=visualstudiosdk-2022)
+ - [Swagger](https://swagger.io/)
 
-## Installation
+## Running locally
 
-### Dependencies
+First, clone the project to your local machine using the following command:
 
-Make sure you have Ruby 1.9.3 and Git installed. Type into the terminal:
-
-```bash
-$ ruby -v
+```
+git clone https://github.com/ozmartins/Osm.InterestRate.git
 ```
 
-Then type into the terminal:
+Then, to enter into the project directory, type into the terminal:
 
-```bash
-$ git --version
+```
+cd Osm.InterestRate\Osm.InterestRate.Api
+```
+Finally, run the app using the command shown below:
+
+```
+dotnet run --project Osm.InterestRate.Api.csproj
 ```
 
-Verify you see "ruby 1.9.3pXXX" (where the XXX can be any number). If not then download and run [RailsInstaller](http://railsinstaller.org/) in order to get Ruby.
-
-If you get an error of "no git command", then download and run
-[RailsInstaller](http://railsinstaller.org/) in order to get git.
+Now, the is running and you can try it accessing the URL https://localhost:5001
 
 ### GitHub
 
