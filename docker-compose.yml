@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  osm.interestrate.api:
+    image: ${DOCKER_REGISTRY-}osminterestrateapi
+    build:
+      context: .
+      dockerfile: Osm.InterestRate.Api/Dockerfile

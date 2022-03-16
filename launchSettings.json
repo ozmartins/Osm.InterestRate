@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "serviceActions": {
+        "osm.interestrate.api": "StartWithoutDebugging"
+      },
+      "commandVersion": "1.0"
+    }
+  }
+}
