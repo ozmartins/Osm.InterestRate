@@ -11,6 +11,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["Osm.InterestRate.Api/Osm.InterestRate.Api.csproj", "Osm.InterestRate.Api/"]
+COPY ["Osm.InterestRate.Domain/Osm.InterestRate.Domain.csproj", "Osm.InterestRate.Domain/"]
+COPY ["Osm.InterestRate.Data/Osm.InterestRate.Data.csproj", "Osm.InterestRate.Data/"]
 RUN dotnet restore "Osm.InterestRate.Api/Osm.InterestRate.Api.csproj"
 COPY . .
 WORKDIR "/src/Osm.InterestRate.Api"
