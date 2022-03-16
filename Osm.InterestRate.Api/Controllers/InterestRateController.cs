@@ -21,7 +21,7 @@ namespace Osm.InterestRate.Api.Controllers
         [HttpGet]
         [ProducesResponseType(200)]
         [ProducesResponseType(500)]
-        [SwaggerOperation(Summary = Constants.InterestRateGetSummary, Description = Constants.InterestRateGetDescription, Tags = new[] { Constants.InterestRateTag })]
+        [SwaggerOperation(Summary = ControllerConstants.InterestRateGetSummary, Description = ControllerConstants.InterestRateGetDescription, Tags = new[] { ControllerConstants.InterestRateTag })]
         public ActionResult<InterestRateModel> Get()
         {
             try
@@ -30,7 +30,7 @@ namespace Osm.InterestRate.Api.Controllers
 
                 if (interestRate == null)
                 {
-                    return StatusCode(500, Constants.NullInterestRateMessage);
+                    return StatusCode(500, ControllerConstants.NullInterestRateMessage);
                 }
 
                 return Ok(interestRate);
