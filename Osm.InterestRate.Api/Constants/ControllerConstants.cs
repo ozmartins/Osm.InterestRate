@@ -1,4 +1,4 @@
-﻿namespace Osm.InterestRate.Api.Controllers
+﻿namespace Osm.InterestRate.Api.Constants
 {
     public static class ControllerConstants
     {

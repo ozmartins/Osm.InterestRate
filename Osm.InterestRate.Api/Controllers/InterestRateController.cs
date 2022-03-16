@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Osm.InterestRate.Api.Constants;
 using Osm.InterestRate.Domain.Interfaces;
 using Osm.InterestRate.Domain.Models;
 using Swashbuckle.AspNetCore.Annotations;
